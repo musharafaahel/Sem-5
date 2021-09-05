@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Working with JavaScript</title>
+		<script language="javascript">
+			var num = "";
+			var updatedNum = "";
+			function update(value){
+				num = num + value;
+				
+				document.calc.txtDisplay.value = num;
+			}
+			
+		</script>
+	</head>
+	<body bgcolor="skyblue">
+	   <center>
+		<br><br>
+		<h1>SIMPLE CALCULATOR</h1>
+		<form name="calc">
+
+			<table border="2" cellspacing="5" cellpadding="5">
+				<tr>
+					<td colspan="3"><input type="text" name="txtDisplay"><br></td>
+					<td><input type="button" value="AC" onclick="document.calc.txtDisplay.value = num = '' "></td>
+				</tr>
+				<tr>
+					<td align="center"><input type="button" value="7" onclick=update('7')></td>
+					<td align="center"><input type="button" value="8" onclick=update('8')></td>
+					<td align="center"><input type="button" value="9" onclick=update('9')></td>
+					<td align="center"><input type="button" value="+" onclick=update('+')></td>
+				</tr>
+				<tr>
+					<td align="center"><input type="button" value="4" onclick=update('4')></td>
+					<td align="center"><input type="button" value="5" onclick=update('5')></td>
+					<td align="center"><input type="button" value="6" onclick=update('6')></td>
+					<td align="center"><input type="button" value="-" onclick=update('-')></td>
+				</tr>
+				<tr>
+					<td align="center"><input type="button" value="1" onclick=update('1')></td>
+					<td align="center"><input type="button" value="2" onclick=update('2')></td>
+					<td align="center"><input type="button" value="3" onclick=update('3')></td>
+					<td align="center"><input type="button" value="*" onclick=update('*')></td>
+				</tr>
+				<tr>
+					
+					<td align="center"><input type="button" value="0" onclick=update('0')></td>
+					<td align="center"><input type="button" value="." onclick=update('.')></td>
+					<td align="center"><input type="button" value="=" onclick="document.calc.txtDisplay.value = num = eval(num)"></td>
+					<td align="center"><input type="button" value="/" onclick=update('/')></td>
+				</tr>
+			</table>
+ 		</form>
+	   </center>
+
+	</body>
+</html>
