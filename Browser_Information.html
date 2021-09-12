@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>
+			Browser Information
+		</title>
+		<script language="javascript">
+			function show(){
+				document.write("<h1>Your Browser Information</h1>");
+				document.write("Name : " + navigator.appName);
+				document.write("<br/>App version :" + navigator.appVersion);
+				document.write("<br/>Application Code Name :"+ navigator.appCodeName);
+				document.write("<br/>Is Cookie Enabled :"+ navigator.cookieEnabled);
+				document.write("<br/>Is Java Enabled :"+ navigator.javaEnabled);
+				document.write("<br/>MIME Types :"+ navigator.mimeTypes);
+				document.write("<br/>Platform :"+ navigator.platform);
+				document.write("<br/>Plugins :"+ navigator.plugins);
+				document.write("<br/>System Language :"+ navigator.language);
+				document.write("<br/>Is in Online :"+ navigator.onLine);
+				document.write("<br/>User Agent :"+ navigator.userAgent);
+			}
+		</script>
+	</head>
+	<body bgcolor="skyblue">
+		<input type="button" value="Click Me" onclick="show()">
+	</body>
+</html>
